@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>Index</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/StyleSheet.css">
+
+    <style>
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0%;
+  background-color: #2c351f;
+}
+
+.container {
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  width: 50%;
+  font-size: 25px;
+}
+
+a.bar {
+  display: block;
+  color: rgb(143, 143, 143);
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+a.bar:hover {
+  color: white;
+}
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th colspan="5">
+
+            </th>
+        </tr>
+        <tr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 style="font-size: 35px; color: #ffe7c6; text-align: center;"><b>小小原住民</b></h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-2">
+                        <a class="bar" :class="{'active' : visibility=='all'}" @click.prvent="visibility = 'all' "
+                            href="./Geog/map.html">分佈</a>
+                    </div>
+                    <div class="col-sm-12 col-md-2">
+                        <a class="bar" :class="{'active' : visibility=='all'}" @click.prvent="visibility = 'all' "
+                            href="../html/Myth/myth.html">神話</a>
+                    </div>
+                    <div class="col-sm-12 col-md-2">
+                        <a class="bar" :class="{'active' : visibility=='all'}" @click.prvent="visibility = 'all' "
+                            href="../html/Celebrate/celebration.html">慶典</a>
+                    </div>
+                    <div class="col-sm-12 col-md-2">
+                        <a class="bar" :class="{'active' : visibility=='all'}" @click.prvent="visibility = 'all' "
+                            href="Life/life.html">生活</a>
+                    </div>
+                    <div class="col-sm-12 col-md-2">
+                        <a class="bar" :class="{'active' : visibility=='all'}" @click.prvent="visibility = 'all' "
+                            href="History/history.html">由來</a>
+                    </div>
+                </div>
+            </div>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>

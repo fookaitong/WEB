@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>Life Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+img {
+  width: 250px;
+  border: 1px;
+  border-color: gray;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+    </style>
+</head>
+
+    <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #2c351f;">
+      <a class="navbar-brand" style="text-decoration: none; font-size: 30px; pointer-events: auto; border-bottom: none; color: #ffe7c6;" href="../index.html">小小原住民</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../Geog/map.html">分佈</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Myth/myth.html">神話</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Celebrate/celebration.html">慶典</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="life.html">生活</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../History/history.html">由來</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container">
+        <img id="img-01" src="img/1.jpg" alt="泰雅族居住地域境內的高山相當多，例如插天山、棲蘭山、合歡山、大霸尖山、奇萊山等都是。河川則有新店溪、大甲溪、秀姑蘭溪等。以山田燒墾和和狩獵採集為生。
+    人口分佈以花蓮秀林鄉最多，分佈區尚有南投仁愛鄉、新竹尖石鄉、桃園復興鄉、花蓮縣萬榮鄉、宜蘭縣南澳鄉。總人口數約九萬餘人僅次於阿美族，為台灣原住民族的第二大族。" style="margin: 10px;"
+            class="img-thumbnail">
+
+        <img id="img-02" src="img/2.jpg" alt="賽夏族夾雜於泰雅族與客家人之間，為了適應當地社會環境的需求，賽夏人大部份會講泰雅語與客語、甚至以此兩種語言為日常用語。
+    而自我族群的語言反而日漸淡面對強勢的外在文化，老一輩的賽夏族人對於傳統的祭典就更加珍惜，甚至排除了許多外力的介入，使賽夏族的祭典能夠完整地保留下來，在台灣原住民族當中，是少數能保有祭典原味的族群。"
+            style="margin: 10px;" class="img-thumbnail">
+
+        <img id="img-03" src="img/3.jpg" alt="邵族的居住地雖然不靠海，但因為世居於日月潭畔，所以發展出海陸兼具的產業文化，而漁產也是邵族人重要的食材來源。
+    邵族的生產方式主要為捕魚、打獵和山田燒墾，漁業在邵族的重要性僅次於農墾業，其漁獵的方法相當多，如「浮嶼誘魚法」、「魚筌誘魚法」、「毒魚」、「網魚」、「罩魚」……等，都足以顯示邵族漁業的發達。"
+            style="margin: 10px;" class="img-thumbnail">
+
+        <img id="img-04" src="img/4.jpg" alt="鄒族居住於玉山西南方，現今阿里山一帶。有些學者將之稱為「北鄒」。
+    有別於「北鄒」，居住於高雄縣三民鄉的「卡那布那布」族及高雄縣桃源鄉的「沙阿魯阿」族被稱為「南鄒」。人口約六千餘人，和布農族同樣居處海拔較高之山區。北部族群與南部族群在語言、文化風俗上差異性很大，常以「北鄒」、「南鄒」稱之。"
+            style="margin: 10px;" class="img-thumbnail">
+
+        <img id="img-05" src="img/5.jpg" alt="魯凱族居住於中央山脈南段兩側的山區，也就是屏東縣霧台鄉、高雄縣茂林鄉及台東縣卑南鄉。相傳祖先由台東的海岸上岸，隨即向山上走，來到中央山脈南段的肯杜爾山定居。過了一些時日，部份族人在部落領袖領導下，由一隻通靈的雲豹領路、老鷹在空中引導，翻山越嶺來到舊好茶，雲豹停佇良久，不肯離開，族人遂在舊好茶建立了部落。之後，一部份族人又遷移至霧台鄉的阿禮、去露、霧台等部落。
+    因此魯凱族被稱為雲豹的故鄉，族人為了感恩禁止狩獵雲豹和老鷹。為了交通上的便利，居住在霧台鄉的魯凱人也遷移到接近平地的瑪家鄉三和村及三地門鄉的青葉村。留在台東的族人也漸漸遷移至平地，在今卑南鄉的大南村(東興社區)建立了家園。"
+            style="margin: 10px;" class="img-thumbnail">
+
+        <img id="img-06" src="img/6.jpg"
+            alt="大致上分為頭目(mamazangilan)、貴族、勇士、平民四個階級。其中貴族又因與頭目的關係親疏分為二～三個等級。
+    貴族階級講究門當戶對，以同階級間的聯姻為理想的婚姻形式，因此頭目階級常與鄰近村落的頭目結為親家。頭目是地主階級，擁有土地、河流與獵場。藉著婚姻關係可以擴展自我的領地。階級低的族人也希望能與比自己階級高的人結婚，藉以提升自己的階級，因而在婚生子女中會有階級昇降的有趣現象。"
+            style="margin: 10px;" class="img-thumbnail">
+
+        <img id="img-07" src="img/7.jpg"
+            alt="卑南族的社會裡有二個領導人物：一個是男祭師(rahan)，負責主持部落性的重要祭儀。一位是政治領袖(ayawan)，由村子裡領導能力強的人來擔任，負責部落裡重大事情的協調者，亦是人獵祭、爭戰的領導人物。    "
+            style="margin: 10px;" class="img-thumbnail">
+
+        <img id="img-08" src="img/8.jpg"
+            alt="雅美族居住於台東外海的蘭嶼島上，達悟人自稱「達悟」，是「人」的意思。早期稱之為「雅美」一詞是日本人鳥居龍藏所命名，西元一九九五年，旅台的達悟青年成立「達悟同鄉會」希冀正名「雅美」為「達悟」。"
+            style="margin: 10px;" class="img-thumbnail">
+
+        <img id="img-09" src="img/9.jpg" alt="阿美族是個能歌善舞的民族，舉凡生活的情事，個人心情的抒發，都用歌舞來表達。族人大多體型高大，因此目前職棒名星、籃壇名將有許多是阿美族的同胞。"
+            style="margin: 10px;" class="img-thumbnail">
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close" style="color: white; font-size: 68px;">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    <script>
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img1 = document.getElementById("img-01");
+        var img2 = document.getElementById("img-02");
+        var img3 = document.getElementById("img-03");
+        var img4 = document.getElementById("img-04");
+        var img5 = document.getElementById("img-05");
+        var img6 = document.getElementById("img-06");
+        var img7 = document.getElementById("img-07");
+        var img8 = document.getElementById("img-08");
+        var img9 = document.getElementById("img-09");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img1.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img2.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img3.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img4.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img5.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img6.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img7.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img8.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img9.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
